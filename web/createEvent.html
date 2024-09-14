@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Event</title>
+    <link rel="stylesheet" href="total.css">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1 style="text-align: center">Create New Event</h1>
+    <div style="text-align: center;">
+        <form action="CreateEvent" method="post">
+            <label for="eventNumber">Event Number:</label><br>
+            <input type="text" id="eventNumber" name="eventNumber" required><br><br>
+
+            <label for="eventName">Event Name:</label><br>
+            <input type="text" id="eventName" name="eventName" required><br><br>
+
+            <label for="coordinator">Coordinator:</label><br>
+            <input type="text" id="coordinator" name="coordinator" required><br><br>
+
+            <label for="contact">Coordinator Contact:</label><br>
+            <input type="text" id="contact" name="contact" required><br><br>
+
+            <label for="fees">Fees:</label><br>
+            <input type="text" id="fees" name="fees" required><br><br>
+
+            <label for="venue">Venue:</label><br>
+            <input type="text" id="venue" name="venue" required><br><br>
+
+            <label for="date">Date:</label><br>
+            <input type="date" id="date" name="date" required><br><br>
+
+            <input type="submit" value="Create Event">
+        </form>
+    </div>
+    <div style="text-align: center;">
+        <a href="index.html"><button>Back to Home</button></a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Send Reminder</title>
+    <link rel="stylesheet" href="total.css">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1 style="text-align: center">Send Event Reminder</h1>
+    <div style="text-align: center;">
+        <form action="SendReminder" method="post">
+            <label for="eventNumber">Event Number:</label><br>
+            <input type="text" id="eventNumber" name="eventNumber" required><br><br>
+
+            <label for="reminderMessage">Reminder Message:</label><br>
+            <textarea id="reminderMessage" name="reminderMessage" rows="4" cols="50" required></textarea><br><br>
+
+            <input type="submit" value="Send Reminder">
+        </form>
+        <br>
+        <a href="index.html"><button>Back to Home</button></a>
+    </div>
+</body>
+</html>

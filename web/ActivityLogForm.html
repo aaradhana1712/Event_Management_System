@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Log User Activity</title>
+</head>
+<body>
+    <h1>Log User Activity</h1>
+    <form action="UserActivityServlet" method="post">
+        <label for="user_id">User ID:</label>
+        <input type="text" id="user_id" name="user_id" required><br><br>
+        <label for="activity_type">Activity Type:</label>
+        <input type="text" id="activity_type" name="activity_type" required><br><br>
+        <label for="activity_description">Activity Description:</label>
+        <textarea id="activity_description" name="activity_description" required></textarea><br><br>
+        <input type="submit" value="Log Activity">
+    </form>
+</body>
+</html>

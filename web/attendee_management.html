@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Attendee Management</title>
+    <link rel="stylesheet" href="total.css">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Attendee Management</h1>
+
+    <!-- Form to Add Attendee -->
+    <section>
+        <h2>Add Attendee</h2>
+        <form action="AttendeeServlet" method="post">
+            <input type="hidden" name="action" value="add">
+            <label for="eventNumberAdd">Event Number:</label>
+            <input type="text" id="eventNumberAdd" name="eventNumber" required><br>
+            <label for="attendeeNameAdd">Name:</label>
+            <input type="text" id="attendeeNameAdd" name="attendeeName" required><br>
+            <label for="attendeeEmailAdd">Email:</label>
+            <input type="email" id="attendeeEmailAdd" name="attendeeEmail" required><br>
+            <label for="attendeePhoneAdd">Phone:</label>
+            <input type="text" id="attendeePhoneAdd" name="attendeePhone" required><br>
+            <input type="submit" value="Add Attendee">
+        </form>
+    </section>
+
+    <hr>
+
+    <!-- Form to Update Attendee -->
+    <section>
+        <h2>Update Attendee</h2>
+        <form action="AttendeeServlet" method="post">
+            <input type="hidden" name="action" value="update">
+            <label for="attendeeIdUpdate">Attendee ID:</label>
+            <input type="text" id="attendeeIdUpdate" name="attendeeId" required><br>
+            <label for="attendeeNameUpdate">Name:</label>
+            <input type="text" id="attendeeNameUpdate" name="attendeeName" required><br>
+            <label for="attendeeEmailUpdate">Email:</label>
+            <input type="email" id="attendeeEmailUpdate" name="attendeeEmail" required><br>
+            <label for="attendeePhoneUpdate">Phone:</label>
+            <input type="text" id="attendeePhoneUpdate" name="attendeePhone" required><br>
+            <input type="submit" value="Update Attendee">
+        </form>
+    </section>
+
+    <hr>
+
+    <!-- Form to Delete Attendee -->
+    <section>
+        <h2>Delete Attendee</h2>
+        <form action="AttendeeServlet" method="post">
+            <input type="hidden" name="action" value="delete">
+            <label for="attendeeIdDelete">Attendee ID:</label>
+            <input type="text" id="attendeeIdDelete" name="attendeeId" required><br>
+            <input type="submit" value="Delete Attendee">
+        </form>
+    </section>
+
+    <hr>
+
+    <!-- Form to List Attendees -->
+    <section>
+        <h2>List Attendees</h2>
+        <form action="AttendeeServlet" method="get">
+            <label for="eventNumberList">Event Number:</label>
+            <input type="text" id="eventNumberList" name="eventNumber" required><br>
+            <input type="submit" value="List Attendees">
+        </form>
+    </section>
+</body>
+</html>
